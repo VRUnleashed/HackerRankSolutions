@@ -1,29 +1,31 @@
-def miniMaxSum(arr):
-    min = 0
-    max = 0
-    a = arr[0]
-    b = arr[0]
+def min_max_sum(arr_local):
+    min_local = 0
+    max_local = 0
+    a = arr_local[0]
+    b = arr_local[0]
 
     for x in range(4):
-        if a <= arr[x + 1]:
+        if a <= arr_local[x + 1]:
             pass
-        elif a > arr[x + 1]:
-            a = arr[x + 1]
+        elif a > arr_local[x + 1]:
+            a = arr_local[x + 1]
 
     for x in range(4):
-        if b >= arr[x + 1]:
+        if b >= arr_local[x + 1]:
             pass
-        elif b < arr[x + 1]:
-            b = arr[x + 1]
+        elif b < arr_local[x + 1]:
+            b = arr_local[x + 1]
 
     for x in range(5):
-        max = max + arr[x]
-        min = min + arr[x]
+        max_local = max_local + arr_local[x]
+        min_local = min_local + arr_local[x]
 
-    max = max - a
-    min = min - b
+    max_local = max_local - a
+    min_local = min_local - b
 
-    print(min, max)
+    print(min_local, max_local)
 
-arr = [3, 1, 4, 5, 5]
-miniMaxSum(arr)
+
+if __name__ == '__main__':
+    arr = [3, 1, 4, 5, 5]
+    min_max_sum(arr)

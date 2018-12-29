@@ -4,4 +4,6 @@ def staircase(n):
         stair = "{}{}"
         print(stair.format(' ' * int(n - x), '#' * int(x)))
 
-staircase(10)
+
+if __name__ == '__main__':
+    staircase(10)

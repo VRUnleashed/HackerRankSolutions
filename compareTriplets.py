@@ -1,5 +1,4 @@
-def compareTriplets(a, b):
-    r = []
+def compare_triplets(a, b):
     s = int(0)
     t = int(0)
 
@@ -9,13 +8,11 @@ def compareTriplets(a, b):
         elif b[i] > a[i]:
             t = t + 1
 
-    #r.append(s)
-    #r.append(t)
-
     r = s, t
 
     return r
 
-result = compareTriplets([1, 2, 5], [0, 7, 3])
 
-print(result)
+if __name__ == '__main__':
+    result = compare_triplets([1, 2, 5], [0, 7, 3])
+    print(result)

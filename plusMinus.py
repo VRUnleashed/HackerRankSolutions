@@ -1,4 +1,4 @@
-def plusMinus(arr):
+def plus_minus(arr):
 
     n = 0
     p = 0
@@ -19,6 +19,11 @@ def plusMinus(arr):
     print(round(n/l, 6))
     print(round(z/l, 6))
 
-arr = [-4, 3, -9, 0, 4, 1]
 
-plusMinus(arr)
+def main():
+    arr = [-4, 3, -9, 0, 4, 1]
+    plus_minus(arr)
+
+
+if __name__ == '__main__':
+    main()
